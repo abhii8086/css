@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  /* to make the height 100% */
+  height: 100vh;
+  /* to scroll in y axis  */
+  overflow-y: auto;
+  /* to stop scroll in x axis  */
+  overflow-x: hidden;
+  /* to enable 3rd axis for 3D view*/
+  perspective: 10px;
+}
+
+.container {
+  /* for overlaping img using absolute  */
+  position: relative;
+  /* for height of container */
+  height: 100%;
+  /* for align text & img */
+  display: flex;
+  /* main axis center align */
+  justify-content: center;
+  /* cross axis center align */
+  align-items: center;
+  /* to preserve the 3d effect */
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background{
+    /* to palce img z index away scale=zoom*/
+    transform:translateZ(-20px) scale(4); 
+    
+}
+
+.foreground{
+  /* to palce img z index away & scale=zoom */
+    transform: translateZ(-10px) scale(2);
+}
+
+.background,
+.foreground {
+  /* to overlap these images */
+  position: absolute;
+  /* for img height */
+  height: 100%;
+  /* for img width */
+  width: 100%;
+  /* to resize the audio & video content inside the container */
+  object-fit: cover;
+  /* for manage layering */
+  z-index: -1;
+}
+
+h1{ 
+  /* to make the text out of the board */
+    position: absolute;
+  /* to adjust the text */
+    top: 5rem;
+    left: 50%;
+/* to transform in the 3d */
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif,poppins;
+  }
+
+  h2{
+    font-size: 5rem;
+    padding: 0 10rem;
+  }
+
+  section{
+    background-color: rgb(45 45 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secHeading{
+  font-size: 5rem;
+  padding: 0 10rem;
+}
+
+.text{
+  font-size:1.5rem;
+  padding: 0 10rem;
+  margin: 5rem 0;
+}
+
+.bg{
+  position: relative;
+  background-attachment: fixed;
+  width:100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.desc{
+  position: absolute;
+  background-color: white;
+  padding: 0.5rem 2.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translate(-50%);
+  color: black;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.bg1{
+  background-image:url(/CSS/projects/parallex-web/images/sport-1.jpg);
+}
+
+.bg2{
+  background-image:url(/CSS/projects/parallex-web/images/sport-2.jpg);
+}
+
+.bg3{
+  background-image:url(/CSS/projects/parallex-web/images/sport-3.jpg);
+}
+
