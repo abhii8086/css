@@ -1,2 +1,2 @@
 # css
-the layout of web!
+the web layout!
