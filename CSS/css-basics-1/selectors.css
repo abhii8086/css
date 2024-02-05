@@ -1,0 +1,79 @@
+/* 1.simple selectors(#id,.class,tagName)*/
+.simple_selector {
+  height: 100px;
+  background-color: red;
+}
+
+#color {
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*2.pseudo selector */
+.pseudo {
+  padding: 10px;
+  text-align: center;
+  height: 50px;
+  background-color: green;
+}
+
+.pseudo:hover {
+  background-color: rebeccapurple;
+}
+
+/* universal selector(*) */
+h3 {
+  height: 100px;
+  background-color: aqua;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* this will do margin 0 and padding 0 to the page.Reset the default margin & padding*/
+}
+
+/* multiple selectors */
+h3,
+h4 {
+  height: 100px;
+  font-style: italic;
+}
+
+/* attribute selector */
+a[target] {
+  background-color: red;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /*
+    display: grid;
+    place-items: center;
+  */
+  
+/* 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  background-color: gray;
+  height: 400px;
+  width: 400px;
+}
+
+.box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  background-color: rebeccapurple;
+  height: 100px;
+  width: 100px;
+}

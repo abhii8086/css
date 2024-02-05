@@ -1,0 +1,32 @@
+.box{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.spacer{
+    height: 100vh;
+}
+
+#box-1{
+    /* position: fixed; */
+}
+
+#box-2{
+    /* position: absolute; */
+    top:120px;
+}
+
+#box-3{
+    /* top,bottom,left,right */
+    /* position: relative;
+    top: 30px; */
+}
+
+#box-4{
+    background-color: red;
+    position: sticky;
+    top: 0px;
+}
+
